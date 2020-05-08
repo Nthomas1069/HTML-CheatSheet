@@ -12,6 +12,7 @@
   <div id="top_menu">
     <a href="#lists">Lists</a>
     <a href="#paragraphs">Paragraphs</a>
+    <a href="#image">Images</a>
   </div>
 
   <div id="headers">
@@ -47,9 +48,9 @@
     <p>A simple un-ordered list containing a single item, "List Item", might look like this in HTML:</p>
 
     <div class="code">
-      <p class="code">&lt;ul&gt</p>
-      <p class="code" style="text-indent:1em">&ltli&gt;List Item&lt;/li&gt</p>
-      <p class="code">&lt;/ul&gt;</p>
+      <p>&lt;ul&gt</p>
+      <p style="text-indent:1em">&ltli&gt;List Item&lt;/li&gt</p>
+      <p>&lt;/ul&gt;</p>
     </div>
 
     <p>In a web browser, the un-ordered list looks like this:</p>
@@ -63,9 +64,9 @@
     listed items are numbered. That's the only difference! The code looks like this:</p>
 
     <div class="code">
-      <p class="code">&lt;ol&gt</p>
-      <p class="code" style="text-indent:1em">&ltli&gt;List Item&lt;/li&gt</p>
-      <p class="code">&lt;/ol&gt;</p>
+      <p>&lt;ol&gt</p>
+      <p style="text-indent:1em">&ltli&gt;List Item&lt;/li&gt</p>
+      <p>&lt;/ol&gt;</p>
     </div>
     
     <p>In a web browser, the ordered list looks like this:</p>
@@ -76,7 +77,6 @@
     </ol>
 
     <a href="#top_menu"><h6>Back To Top</h6></a>
-
   </div>
 
   <div id="paragraphs">
@@ -94,18 +94,41 @@
     <p>There is no closing tag for a break. It looks like this in code:</p>
     <p class = "code" style="margin-left: 5rem; padding: 0.5rem">&ltbr&gt</p>
 
+    <a href="#top_menu"><h6>Back To Top</h6></a>
+  </div>
+
+  <div id="image">
+    <h2>Images</h2>
+    <p>Pictures and Video are an incredibly enriching attribute in basic web development. Ordinary text can 
+      be very informative, even entertaining, but most consumers of web content expect at least some visually 
+      interesting content in the form of images and video from the pages they frequent. Luckily, adding some 
+      great pics and vids is relatively easy!
+    </p>
+    <p>Here is a token image referenced from the web at <a href="https://www.trustnodes.com/wp-content/uploads/2018/01/a-token.jpg">https://www.trustnodes.com/wp-content/uploads/2018/01/a-token.jpg</a></p>
+    <img src="https://www.trustnodes.com/wp-content/uploads/2018/01/a-token.jpg" alt="A token coin">
+    <p>Images can also be used from jpg, jpeg, png, etc., files stored in web page file folders.</p>
+    <p>Here is an image stored in the "Images_Video" folder for this project:</p>
+    <img src="./Images_Video/hip-hop.jpg" alt="A man dancing"/>
+    <p>Here is what the code used when the source image in on another website:</p>
+      <div class="code">
+        <p style="text-indent:1em">&ltimg src="http://website.com/page/file.jpg" alt="Description" /&gt</p>
+      </div>
+    <p>Notice an image element uses a self-closing tag. Using a locally stored image file would look like this:</p>
+      <div class="code">
+        <p style="text-indent:1em">&ltimg src="./Folder_Name/file.jpg" alt="Description" /&gt</p>
+      </div>
+    <p></p>
+
+
+    <video src="./Images_Video/TLC.mp4" width="320" height="240" controls>Video Not Supported</video>
 
     <a href="#top_menu"><h6>Back To Top</h6></a>
-
   </div>
 
   <!-- Other Segments to Complete;
-    Strong and Italics
-    Breaks
-    image
-    video
     hyperlinks (anchors)
     anchor page scrolling using id's
+    link to another page
   -->
 
 </body>

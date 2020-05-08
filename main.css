@@ -29,11 +29,16 @@ div {
 }
 
 #lists {
-  background-color: rgb(182, 160, 121);
+  background-color: rgb(199, 177, 139);
   color: black;
 }
 
 #paragraphs {
   background-color: rgb(204, 209, 173);
+  color: black;
+}
+
+#image {
+  background-color: rgb(199, 177, 139);
   color: black;
 }
