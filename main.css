@@ -15,7 +15,7 @@ div {
   background-color: darkslategrey;
   font-family: monospace;
   color: cyan;
-  width: 500px; 
+  width: 550px; 
 }
 
 #top_menu {
@@ -26,6 +26,7 @@ div {
 #headers {
   background-color: rgb(204, 209, 173);
   color: black;
+  opacity: 0.7;
 }
 
 #lists {
@@ -36,9 +37,20 @@ div {
 #paragraphs {
   background-color: rgb(204, 209, 173);
   color: black;
+  opacity: 0.7;
 }
 
 #image {
   background-color: rgb(199, 177, 139);
   color: black;
 }
+
+#video {
+  background-color: rgb(204, 209, 173);
+  color: black;
+  opacity: 0.7;
+}
+
+#links {
+  background-color: rgb(199, 177, 139);
+  color: black;

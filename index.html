@@ -1,136 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="main.css">
-  <title>HTML Cheat-Sheet</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>HTML Cheat-Sheet</title>
+  </head>
 
-<body>
-  <h1 style="text-align: center">Welcome to the HTML CheatSheet!</h1>
-  <div id="top_menu">
-    <a href="#lists">Lists</a>
-    <a href="#paragraphs">Paragraphs</a>
-    <a href="#image">Images</a>
-  </div>
-
-  <div id="headers">
-    <h2>Headers</h2>
-    <p>It is usually a good idea to separate text content by topic.
-      A good way to do that is with headers. There are six sizes of
-      header to work with, starting with Header1 - the largest - and
-      ending with Header6, the smallest. The html element syntax for 
-      headers is:
-    </p>
-    <p class="code" style="margin-left: 5rem; padding: 0.5rem">&lt;h1&gtMy Header&lt/h1&gt;</p>
-    <h1>Here is a Level One Header</h1>
-    <h2>Here is a Level Two Header</h2>
-    <h3>Here is a Level Three Header</h3>
-    <h4>Here is a Level Four Header</h4>
-    <h5>Here is a Level Five Header</h5>
-    <h6>Here is a Level Six Header</h6>
-  </div>
-
-  <div id="lists">
-    <h2>Lists</h2>
-    <p>Another useful tool is a List. In basic HTML, there are two 
-      kinds of lists to consider. The first is the <strong>Un-Ordered List</strong>. 
-      The items place in an un-ordered list are separated by bullet points. The 
-      syntaxt for un-ordered lists uses opening and closing tags to 
-      establish the list, then opening and closing list tags for the items 
-      in the list.
-    </p>
-    <p>The opening and closing list tags look like this:</p>
-    <p class="code" style="margin-left: 5rem; padding: 0.5rem">&lt;ul&gt&lt/ul&gt;</p>
-    <p>The opening and closing list item tags look like this:</p>
-    <p class="code" style="margin-left: 5rem; padding: 0.5rem">&lt;li&gt&lt/li&gt;</p>
-    <p>A simple un-ordered list containing a single item, "List Item", might look like this in HTML:</p>
-
-    <div class="code">
-      <p>&lt;ul&gt</p>
-      <p style="text-indent:1em">&ltli&gt;List Item&lt;/li&gt</p>
-      <p>&lt;/ul&gt;</p>
+  <body>
+    <h1 style="text-align: center">Welcome to the HTML CheatSheet!</h1>
+    <div id="top_menu">
+      <a href="#lists">Lists</a>
+      <a href="#paragraphs">Paragraphs</a>
+      <a href="#image">Images</a>
+      <a href="#video">Videos</a>
+      <a href="#links">Hyperlinks</a>
     </div>
 
-    <p>In a web browser, the un-ordered list looks like this:</p>
-    <ul>
-      <li>Here is my first list item</li>
-      <li>Here is another.</li>
-      <li>You get the point</li>
-    </ul>
-
-    <p>Another kind of list is the <strong>Ordered List</strong>. In an ordered list, the 
-    listed items are numbered. That's the only difference! The code looks like this:</p>
-
-    <div class="code">
-      <p>&lt;ol&gt</p>
-      <p style="text-indent:1em">&ltli&gt;List Item&lt;/li&gt</p>
-      <p>&lt;/ol&gt;</p>
+    <div id="headers">
+      <h2>Headers</h2>
+      <p>It is usually a good idea to separate text content by topic.
+        A good way to do that is with headers. There are six sizes of
+        header to work with, starting with Header1 - the largest - and
+        ending with Header6, the smallest. The html element syntax for 
+        headers is:
+      </p>
+      <p class="code" style="margin-left: 5rem; padding: 0.5rem">&lt;h1&gtMy Header&lt/h1&gt;</p>
+      <h1>Here is a Level One Header</h1>
+      <h2>Here is a Level Two Header</h2>
+      <h3>Here is a Level Three Header</h3>
+      <h4>Here is a Level Four Header</h4>
+      <h5>Here is a Level Five Header</h5>
+      <h6>Here is a Level Six Header</h6>
     </div>
-    
-    <p>In a web browser, the ordered list looks like this:</p>
-    <ol>
-      <li>Here is my first ordered item</li>
-      <li>Here's another.</li>
-      <li>Last but not least</li>
-    </ol>
 
-    <a href="#top_menu"><h6>Back To Top</h6></a>
-  </div>
+    <div id="lists">
+      <h2>Lists</h2>
+      <p>Another useful tool is a List. In basic HTML, there are two 
+        kinds of lists to consider. The first is the <strong>Un-Ordered List</strong>. 
+        The items place in an un-ordered list are separated by bullet points. The 
+        syntaxt for un-ordered lists uses opening and closing tags to 
+        establish the list, then opening and closing list tags for the items 
+        in the list.
+      </p>
+      <p>The opening and closing list tags look like this:</p>
+      <p class="code" style="margin-left: 5rem; padding: 0.5rem">&lt;ul&gt&lt/ul&gt;</p>
+      <p>The opening and closing list item tags look like this:</p>
+      <p class="code" style="margin-left: 5rem; padding: 0.5rem">&lt;li&gt&lt/li&gt;</p>
+      <p>A simple un-ordered list containing a single item, "List Item", might look like this in HTML:</p>
 
-  <div id="paragraphs">
-    <h2>Paragraphs</h2>
-    <p>This one is easy. The <strong>paragraph</strong> elment has opening and closing tags, 
-    and can contain other text-modifying elements within it. It can also be styled directly or 
-    in a CSS file using the same methods as other HTML elements.</p>
-    <p>The code for a paragraph looks like this:</p>
-    <p class = "code" style="margin-left: 5rem; padding: 0.5rem">&ltp&gt;The paragraph text goes here&lt;/p&gt</p>
-    <p>Emphasis can be added to text by using the <strong>strong</strong> and 
-    <em>emphasis</em> (italics) tags. The code looks like this:</p>
-    <p class = "code" style="margin-left: 5rem; padding: 0.5rem">&ltstrong&gt;This text would be BOLD&lt;/strong&gt</p>
-    <p class = "code" style="margin-left: 5rem; padding: 0.5rem">&ltem&gt;This text would be in italics&lt;/em&gt</p>
-    <p>The last tag to discuss in this section is the "break" tag. Its job<br>is to act<br>like a return<br>button.</p>
-    <p>There is no closing tag for a break. It looks like this in code:</p>
-    <p class = "code" style="margin-left: 5rem; padding: 0.5rem">&ltbr&gt</p>
-
-    <a href="#top_menu"><h6>Back To Top</h6></a>
-  </div>
-
-  <div id="image">
-    <h2>Images</h2>
-    <p>Pictures and Video are an incredibly enriching attribute in basic web development. Ordinary text can 
-      be very informative, even entertaining, but most consumers of web content expect at least some visually 
-      interesting content in the form of images and video from the pages they frequent. Luckily, adding some 
-      great pics and vids is relatively easy!
-    </p>
-    <p>Here is a token image referenced from the web at <a href="https://www.trustnodes.com/wp-content/uploads/2018/01/a-token.jpg">https://www.trustnodes.com/wp-content/uploads/2018/01/a-token.jpg</a></p>
-    <img src="https://www.trustnodes.com/wp-content/uploads/2018/01/a-token.jpg" alt="A token coin">
-    <p>Images can also be used from jpg, jpeg, png, etc., files stored in web page file folders.</p>
-    <p>Here is an image stored in the "Images_Video" folder for this project:</p>
-    <img src="./Images_Video/hip-hop.jpg" alt="A man dancing"/>
-    <p>Here is what the code used when the source image in on another website:</p>
       <div class="code">
-        <p style="text-indent:1em">&ltimg src="http://website.com/page/file.jpg" alt="Description" /&gt</p>
+        <p>&lt;ul&gt</p>
+        <p style="text-indent:1em">&ltli&gt;List Item&lt;/li&gt</p>
+        <p>&lt;/ul&gt;</p>
       </div>
-    <p>Notice an image element uses a self-closing tag. Using a locally stored image file would look like this:</p>
+
+      <p>In a web browser, the un-ordered list looks like this:</p>
+      <ul>
+        <li>Here is my first list item</li>
+        <li>Here is another.</li>
+        <li>You get the point</li>
+      </ul>
+
+      <p>Another kind of list is the <strong>Ordered List</strong>. In an ordered list, the 
+      listed items are numbered. That's the only difference! The code looks like this:</p>
+
       <div class="code">
-        <p style="text-indent:1em">&ltimg src="./Folder_Name/file.jpg" alt="Description" /&gt</p>
+        <p>&lt;ol&gt</p>
+        <p style="text-indent:1em">&ltli&gt;List Item&lt;/li&gt</p>
+        <p>&lt;/ol&gt;</p>
       </div>
-    <p></p>
+      
+      <p>In a web browser, the ordered list looks like this:</p>
+      <ol>
+        <li>Here is my first ordered item</li>
+        <li>Here's another.</li>
+        <li>Last but not least</li>
+      </ol>
 
+      <a href="#top_menu"><h6>Back To Top</h6></a>
+    </div>
 
-    <video src="./Images_Video/TLC.mp4" width="320" height="240" controls>Video Not Supported</video>
+    <div id="paragraphs">
+      <h2>Paragraphs</h2>
+      <p>This one is easy. The <strong>paragraph</strong> elment has opening and closing tags, 
+      and can contain other text-modifying elements within it. It can also be styled directly or 
+      in a CSS file using the same methods as other HTML elements.</p>
+      <p>The code for a paragraph looks like this:</p>
+      <p class = "code" style="margin-left: 5rem; padding: 0.5rem">&ltp&gt;The paragraph text goes here&lt;/p&gt</p>
+      <p>Emphasis can be added to text by using the <strong>strong</strong> and 
+      <em>emphasis</em> (italics) tags. The code looks like this:</p>
+      <p class = "code" style="margin-left: 5rem; padding: 0.5rem">&ltstrong&gt;This text would be BOLD&lt;/strong&gt</p>
+      <p class = "code" style="margin-left: 5rem; padding: 0.5rem">&ltem&gt;This text would be in italics&lt;/em&gt</p>
+      <p>The last tag to discuss in this section is the "break" tag. Its job<br>is to act<br>like a return<br>button.</p>
+      <p>There is no closing tag for a break. It looks like this in code:</p>
+      <p class = "code" style="margin-left: 5rem; padding: 0.5rem">&ltbr&gt</p>
 
-    <a href="#top_menu"><h6>Back To Top</h6></a>
-  </div>
+      <a href="#top_menu"><h6>Back To Top</h6></a>
+    </div>
 
-  <!-- Other Segments to Complete;
-    hyperlinks (anchors)
-    anchor page scrolling using id's
-    link to another page
-  -->
+    <div id="image">
+      <h2>Images</h2>
+      <p>Pictures and Video are an incredibly enriching attribute in basic web development. Ordinary text can 
+        be very informative, even entertaining, but most consumers of web content expect at least some visually 
+        interesting content in the form of images and video from the pages they frequent. Luckily, adding some 
+        great pics and vids is relatively easy!
+      </p>
+      <p>Here is a token image referenced from the web at <a href="https://www.trustnodes.com/wp-content/uploads/2018/01/a-token.jpg">https://www.trustnodes.com/wp-content/uploads/2018/01/a-token.jpg</a></p>
+      <img src="https://www.trustnodes.com/wp-content/uploads/2018/01/a-token.jpg" alt="A token coin">
+      <p>Images can also be used from jpg, jpeg, png, etc., files stored in web page file folders.</p>
+      <p>Here is an image stored in the "Images_Video" folder for this project:</p>
+      <img src="./Images_Video/hip-hop.jpg" alt="A man dancing" />
+      <p>Here is what the code used when the source image in on another website:</p>
+        <div class="code">
+          <p style="text-indent:1em">&ltimg src="http://website.com/page/file.jpg" alt="Description" /&gt</p>
+        </div>
+      <p>Notice an image element uses a self-closing tag. Using a locally stored image file would look like this:</p>
+        <div class="code">
+          <p style="text-indent:1em">&ltimg src="./Folder_Name/file.jpg" alt="Description" /&gt</p>
+        </div>
+      <p></p>
+      <a href="#top_menu"><h6>Back To Top</h6></a>
+    </div>
 
-</body>
+    <div id="video">
+      <h2>Videos</h2>
+      <p>It's easy to add .mp4 format video files to your web page. Just like the image element, the video
+        element uses the "src" to designate the "source" file to display. Unlike the image element,
+        the video uses designated width and height dimensions. If desired, adding "controls" within 
+        the opening tag will display video controls to the user. Here is a video I once used in a school project:
+      </p>
+      <video src="./Images_Video/TLC.mp4" width="320" height="240" controls>Video Not Supported</video>
+      <p>Here is what the code looks like:</p>
+        <div class="code">
+          <p style="text-indent:1em">&ltvideo src="./Image_Folder/FileName.mp4" width="320" height="240" controls&gt;&lt/video&gt</p>
+        </div>
+      <p>Notice that the video element includes a closing tag (unlike the image element).</p>
+
+      <a href="#top_menu"><h6>Back To Top</h6></a>
+    </div>
+
+    <div id="links">
+      <h2>Hyperlinks (Anchor Tags)</h2>
+
+      <h2>Links to Sections on the Same Page</h2>
+
+      <h2>Internal Links to Other Pages</h2>
+
+      <a href="#top_menu"><h6>Back To Top</h6></a>
+    </div>
+
+  </body>
 
 </html>
